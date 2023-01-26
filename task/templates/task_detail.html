@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Task details {% endblock %}
+{% block content %}
+<nav class="navbar">
+    <ul class="list">
+        <li><a class="nav-light list link" href="{% url 'task-list' %}">Back to list view</a></li>
+        <li><a class="nav-light list link" href="{% url 'u_login' %}">Login</a></li>
+        <li><a class="nav-light list link" href="{% url 'u_register' %}">Register</a></li>
+    </ul>
+</nav>
+
+    <h1>{{object.title}}</h1>
+    {% for key, value in object.items %}
+        <p> {{ key }}: {{ value }}</p>
+    {% endfor %}
+    <label for="completed">Completed</label>
+    {% if object.completed %}
+        <input id="completed" type="checkbox" checked value="Completed">
+    {% else %}
+        <input id="completed" type="checkbox" value="Completed">
+    {% endif %}
+{% endblock %}
+
+<!--  "id": 5,-->
+<!--        "title": "Fifth task: to learn python",-->
+<!--        "description": "Some long task description...",-->
+<!--        "created": "2022-01-24 12:00",-->
+<!--        "updated": "2022-01-25 12:00",-->
+<!--        "completed": False-->

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Task List {% endblock %}
+{% block content %}
+<nav class="navbar">
+    <ul class="list">
+<!--        <li><a class="nav-light list link" href="{% url 'task-list' %}">Back to list view</a></li>-->
+        <li><a class="nav-light list link" href="{% url 'u_login' %}">Login</a></li>
+        <li><a class="nav-light list link" href="{% url 'u_register' %}">Register</a></li>
+    </ul>
+</nav>
+<h1>TODO LIST</h1>
+<ul>
+    {% for object in object_list%}
+        <li id="task-{{object.id}}"><a href="{% url 'task-detail' object.id %}"> {{object.title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
