@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}User register{% endblock %}
+{% block styles %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/static/css/styles.css" />
+{% endblock %}
+
+{% block content %}
+<nav class="navbar">
+    <ul class="list">
+        <li><a class="nav-light list link" href="{% url 'task-list' %}">Back to list view</a></li>
+        <li><a class="nav-light list link" href="{% url 'u_login' %}">Login</a></li>
+<!--        <li><a class="nav-light list link" href="{% url 'u_register' %}">Register</a></li>-->
+    </ul>
+</nav>
+
+<!--User register form-->
+<div class="container">
+      <form action="#">
+        <div class="form-registation">
+          <div>
+            <h1>SING UP</h1>
+          </div>
+          <div>
+            <label class="label-style" for="fname" ><b>Your name:</b></label>
+            <input
+              class="input-style"
+              type="text"
+              placeholder="Input your name..."
+              name="firstname"
+              id="fname"
+              required
+            />
+          </div>
+           <div>
+           <label class="label-style" for="email" ><b>Email</b></label>
+           <input
+             class="input-style"
+             type="email"
+             placeholder="Your Email"
+             name="email"
+             id="email"
+             required
+           />
+          </div>
+          <div>
+            <label class="label-style" for="psw"  ><b>Password:</b></label>
+            <input
+              class="input-style"
+              type="password"
+              placeholder="Password "
+              name="psw"
+              id="psw"
+              required
+            />
+          </div>
+          <div>
+            <label class="label-style" for="psw-repeat"
+              ><b>Repeat your password:</b></label
+            >
+            <input
+              class="input-style"
+              type="password"
+              placeholder="Repeat your password once again "
+              name="psw-repeat"
+              id="psw-repeat"
+              required
+            />
+          </div>
+          <div class="check-box-style">
+            <input
+              type="checkbox"
+              id="agrement"
+              name="agrement"
+              value="agrement"
+            />
+            <label for="agrement"> I agree all statements in <a href="">Terms of service.</a></label
+            ><br />
+          </div>
+          <div class="button-box-style">
+            <button class="button-box" type="submit"  id="btn-1">Register</button>
+            <button class="button-box" type="reset"  id="btn-2">Clear form</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+{% endblock %}

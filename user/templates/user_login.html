@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}User login{% endblock %}
+{% block styles %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/static/css/styles.css" />
+{% endblock %}
+{% block content %}
+<nav class="navbar">
+    <ul class="list">
+        <li><a class="nav-light list link" href="{% url 'task-list' %}">Back to list view</a></li>
+<!--        <li><a class="nav-light list link" href="{% url 'u_login' %}">Login</a></li>-->
+        <li><a class="nav-light list link" href="{% url 'u_register' %}">Register</a></li>
+    </ul>
+</nav>
+
+<!--User login form-->
+<div class="container">
+      <form action="#">
+        <div class="form-loging">
+          <div>
+            <h1 class="title-login">Loging</h1>
+          </div>
+           <div>
+           <label class="label-style" for="email" ><b>Email</b></label>
+           <input
+             class="input-style"
+             type="email"
+             placeholder="Your Email"
+             name="email"
+             id="email"
+             required
+           />
+          </div>
+          <div>
+            <label class="label-style" for="psw"  ><b>Password:</b></label>
+            <input
+              class="input-style"
+              type="password"
+              placeholder="Password "
+              name="psw"
+              id="psw"
+              required
+            />
+          </div>
+          </div>
+          <div class="button-box-style-submit">
+            <button class="button-box-submit" type="submit"  id="btn-1">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+{% endblock %}

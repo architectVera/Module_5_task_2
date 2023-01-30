@@ -1,0 +1,134 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: rgb(122, 87, 51);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 50px;
+  padding: 15px;
+
+  width: 700px;
+
+
+  background-color: rgb(248, 242, 213);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-registation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 670px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(248, 242, 213);
+}
+
+h1 {
+  width: 645px;
+  padding: 0 25px 10px 0;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+}
+
+.input-style {
+  width: 450px;
+  height: 20px;
+  border: rgb(141, 154, 168) solid 1.5px;
+}
+
+.label-style {
+  font-size: 14px;
+  font-style: normal;
+  inline-size: 20px;
+  padding: 0 25px 25px 0;
+}
+
+
+
+.check-box-style {
+  width: 460px;
+}
+.button-box-style {
+  width: 460px;
+}
+
+
+.button-box {
+  border-radius: 5px;
+  border: rgb(141, 154, 168) solid 1.5px;
+  padding: 4px 18px 4px 18px;
+}
+
+.button-box:hover {
+  background-color: steelblue;
+  color: white;
+}
+
+
+.input-style:hover {
+  border: steelblue solid 1.5px;}
+
+.form-loging {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 670px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(248, 242, 213);
+}
+
+.button-box-submit {
+  border-radius: 5px;
+  border: rgb(141, 154, 168) solid 1.5px;
+  padding: 4px 18px 4px 18px;
+}
+.button-box-style-submit {
+  width: 260px;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: red;
+}
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover,  {
+  background-color: red;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+.nav-light {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var( #2196f3);
+}
